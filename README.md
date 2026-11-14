@@ -18,6 +18,12 @@ Revision notes for the Claude Certified Architect – Foundations exam (CCAR-F),
   4. [Developer Productivity with Claude](scenarios/04-developer-productivity/README.md)
   5. [Claude Code for Continuous Integration](scenarios/05-claude-code-for-ci/README.md)
   6. [Structured Data Extraction](scenarios/06-structured-data-extraction/README.md)
-- [exercises.md](exercises.md): the 4 hands-on preparation exercises
+- [exercises/](exercises/README.md): the 4 hands-on preparation exercises, each with a worked solution
+  1. [Multi-tool agent with escalation logic](exercises/01-multi-tool-agent-escalation/README.md)
+  2. [Claude Code configuration for a team](exercises/02-claude-code-team-workflow/README.md)
+  3. [Structured data extraction pipeline](exercises/03-structured-extraction-pipeline/README.md)
+  4. [Multi-agent research pipeline](exercises/04-multi-agent-research-pipeline/README.md)
 
-Each task statement in `domains/` has Python code snippets (Agent SDK, Messages API, Claude Code config files). The scenario READMEs still have a `Code snippets` placeholder for end-to-end examples.
+Each task statement in `domains/` has Python code snippets (Agent SDK, Messages API, Claude Code config files). Each scenario README has an end-to-end example that combines them.
+
+The exam tests concepts and architecture, not SDK syntax. Every code file ends with a commentary section (design decision, walk-through, trade-offs, exam traps, check-yourself questions), so read the commentary before the code.

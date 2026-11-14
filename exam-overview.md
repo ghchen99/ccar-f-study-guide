@@ -53,4 +53,4 @@ A solution architect who designs and implements production applications with Cla
 - Study context management: extracting structured facts from verbose tool outputs, scratchpad files for long sessions, subagent delegation to manage context limits.
 - Review escalation and human-in-the-loop patterns: when to escalate (policy gaps, customer requests, inability to progress) vs resolve autonomously; confidence-based routing for human review.
 
-Hands-on practice: see [exercises.md](exercises.md).
+Hands-on practice: see [exercises/](exercises/README.md).
