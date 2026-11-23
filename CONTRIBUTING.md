@@ -14,7 +14,7 @@ For current exam behaviour or SDK APIs, link an official Anthropic or Claude sou
 
 ## Content conventions
 
-- Keep task-statement pages organised around: knowledge, skills, code, design decisions, trade-offs, exam traps, and check-yourself questions.
+- Keep task-statement pages concise and organised around: an `At a glance` callout, `Example` (code), `How it works` (principle callout plus short numbered steps), `Trade-offs` (table or short bullets), an `Exam traps` warning callout, and `Check yourself` questions in collapsible `<details>` blocks. Use GitHub callouts (`> [!NOTE]`, `> [!IMPORTANT]`, `> [!WARNING]`, `> [!TIP]`) sparingly, and use `1.1-agentic-loops.md` as the reference.
 - State SDK version assumptions when an API differs across releases.
 - Treat model IDs and SDK names as illustrative unless a page explicitly records a required version.
 - Prefer scenario-led explanations over isolated implementation details.
