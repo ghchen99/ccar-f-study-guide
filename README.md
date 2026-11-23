@@ -1,5 +1,10 @@
 # Claude Certified Architect – Foundations
 
+![Exam](https://img.shields.io/badge/exam-passed-brightgreen?style=flat-square)
+![Score](https://img.shields.io/badge/score-837-blue?style=flat-square)
+![Revision time](https://img.shields.io/badge/revision-10%20hours-orange?style=flat-square)
+![Vibe](https://img.shields.io/badge/vibe-coded%20%E2%9C%A8-ff69b4?style=flat-square)
+
 Hey, welcome to my unofficial study guide for the Claude Certified Architect – Foundations exam! 
 
 These study notes are all I used to pass with 837 (the pass mark is 720), after about 10 hours of revision over two weeks. I hope they help you get there too.
@@ -23,27 +28,15 @@ Use the [guided exercises](exercises/README.md) to construct agents and workflow
 
 ## A guided revision sequence
 
-### 1 — Understand the foundations
+Work through the five domains in order:
 
 1. [Agentic Architecture & Orchestration](domains/01-agentic-architecture-orchestration/README.md) — 27%
 2. [Tool Design & MCP Integration](domains/02-tool-design-mcp-integration/README.md) — 18%
-
-These domains establish the loop, orchestration patterns, tool contracts, MCP boundaries, and safeguards that recur throughout the exam.
-
-### 2 — Learn the Claude Code workflow
-
 3. [Claude Code Configuration & Workflows](domains/03-claude-code-configuration-workflows/README.md) — 20%
-
-This domain connects repository configuration, path-specific behaviour, plan mode, iterative refinement, and CI/CD integration.
-
-### 3 — Make outputs reliable
-
 4. [Prompt Engineering & Structured Output](domains/04-prompt-engineering-structured-output/README.md) — 20%
 5. [Context Management & Reliability](domains/05-context-management-reliability/README.md) — 15%
 
-These domains cover schemas, validation, retries, context preservation, escalation, human review, provenance, and uncertainty.
-
-### 4 — Apply the knowledge
+Then apply what you've learned:
 
 - Work through the six [exam scenarios](scenarios/README.md).
 - Complete the four [hands-on exercises](exercises/README.md).
