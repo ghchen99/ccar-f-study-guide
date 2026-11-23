@@ -2,6 +2,16 @@
 
 **Weight:** 18%
 
+Start by making each tool unambiguous. Then define structured failures, tool-selection policies, MCP boundaries, and the role of built-in tools.
+
+## Revision sequence
+
+1. Design tool names, descriptions, schemas, and boundaries.
+2. Define a consistent error contract for callers and agents.
+3. Explain tool distribution and `tool_choice` trade-offs.
+4. Separate MCP resource/server integration from application logic.
+5. Decide when built-in tools are sufficient and when custom tools are needed.
+
 ## Task statements
 
 - [2.1 Tool interface design](2.1-tool-interface-design.md)

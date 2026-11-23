@@ -2,6 +2,16 @@
 
 **Weight:** 20%
 
+Start with explicit, measurable criteria. Add examples and schemas only where they improve a demonstrated failure mode, then design validation and review loops.
+
+## Revision sequence
+
+1. Make acceptance criteria explicit and testable.
+2. Use few-shot examples for genuine ambiguity rather than general instruction.
+3. Choose schema or tool constraints appropriate to the downstream system.
+4. Define validation, retries, and feedback that preserve failures for the model.
+5. Process large workloads and reviews in controlled batches or passes.
+
 ## Task statements
 
 - [4.1 Explicit criteria to improve precision](4.1-explicit-criteria.md)

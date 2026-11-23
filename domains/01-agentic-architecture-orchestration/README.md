@@ -2,6 +2,16 @@
 
 **Weight:** 27%
 
+Start with agent loops and task decomposition. Then learn where subagent delegation, programmatic enforcement, hooks, and session state improve reliability.
+
+## Revision sequence
+
+1. Understand the loop and its structured stop conditions.
+2. Choose coordinator/subagent patterns for the work shape.
+3. Decide what context and state each agent receives.
+4. Add workflow gates and hooks for actions that require guarantees.
+5. Handle handoffs and resumable sessions without losing critical facts.
+
 ## Task statements
 
 - [1.1 Agentic loops](1.1-agentic-loops.md)

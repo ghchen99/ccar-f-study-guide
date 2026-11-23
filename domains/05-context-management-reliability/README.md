@@ -2,6 +2,16 @@
 
 **Weight:** 15%
 
+Start with what must survive a long interaction. Then control escalation, error propagation, codebase context, human review, provenance, and uncertainty.
+
+## Revision sequence
+
+1. Preserve only the critical facts needed for the next decision.
+2. Define escalation triggers and ambiguity handling.
+3. Propagate structured errors and partial results across agents.
+4. Explore large codebases with scoped evidence rather than dumping context.
+5. Route uncertain outputs to calibrated human review with traceable sources.
+
 ## Task statements
 
 - [5.1 Preserve critical information across long interactions](5.1-context-preservation.md)

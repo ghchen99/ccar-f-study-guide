@@ -1,24 +1,26 @@
-# Exam Overview
+# Exam overview
 
-Claude Certified Architect – Foundations · Exam code: CCAR-F · Version 1.0 (effective July 2026).
+**Claude Certified Architect – Foundations**  
+Exam code: **CCAR-F** · Blueprint version: **1.0** · Effective: **July 2026**
 
-Source: [GUIDE.md](GUIDE.md)
+[Begin revision](domains/01-agentic-architecture-orchestration/README.md)
 
-## About the certification
+## What the exam measures
 
-Validates that practitioners can make informed decisions about tradeoffs when implementing real-world solutions with Claude. Covers Claude Code, the Claude Agent SDK, the Claude API, and Model Context Protocol (MCP). Questions are scenario-based, drawn from real customer use cases, and test practical judgment about architecture, configuration, and tradeoffs in production.
+The exam validates architectural judgement across Claude Code, the Claude Agent SDK, the Claude API, and Model Context Protocol (MCP). Questions are scenario-based and assess whether you can choose the right trade-off for a realistic production system.
 
-## Intended audience
+You should be prepared to:
 
-A solution architect who designs and implements production applications with Claude, typically with 6+ months of hands-on experience in:
+- Build and coordinate agentic systems
+- Integrate tools and MCP servers
+- Configure Claude Code for team workflows
+- Produce reliable structured output
+- Manage context, uncertainty, escalation, and human review
+- Explain why a pattern is appropriate, not just how to implement it
 
-- Agentic applications with the Claude Agent SDK (multi-agent orchestration, subagent delegation, tool integration, lifecycle hooks)
-- Claude Code for team workflows (CLAUDE.md, Agent Skills, MCP server integrations, plan mode)
-- MCP tool and resource interface design for backend integration
-- Prompt engineering for reliable structured output (JSON schemas, few-shot, extraction patterns)
-- Context window management across long documents, multi-turn conversations, and multi-agent handoffs
-- CI/CD integration for code review, test generation, and PR feedback
-- Escalation and reliability decisions (error handling, human-in-the-loop, self-evaluation)
+## Who it is designed for
+
+Typically, a solution architect or experienced Claude practitioner with hands-on exposure to agent SDKs, Claude Code configuration, MCP integration, prompt engineering, CI/CD, and production reliability patterns.
 
 ## Blueprint
 
@@ -45,12 +47,43 @@ A solution architect who designs and implements production applications with Cla
 
 ## How to prepare
 
-- Build an agent with the Claude Agent SDK: complete agentic loop with tool calling, error handling, and session management. Practice spawning subagents and passing context between them.
-- Configure Claude Code for a real project: CLAUDE.md hierarchy, path-specific rules in `.claude/rules/`, custom skills with frontmatter (`context: fork`, `allowed-tools`), and at least one MCP server.
-- Design and test MCP tools: descriptions that differentiate similar tools, structured error responses with categories and retryable flags, tool selection reliability on ambiguous requests.
-- Build a structured data extraction pipeline: `tool_use` with JSON schemas, validation-retry loops, optional/nullable fields, Message Batches API.
-- Practice prompt engineering: few-shot examples for ambiguous scenarios, explicit review criteria to reduce false positives, multi-pass review for large code reviews.
-- Study context management: extracting structured facts from verbose tool outputs, scratchpad files for long sessions, subagent delegation to manage context limits.
-- Review escalation and human-in-the-loop patterns: when to escalate (policy gaps, customer requests, inability to progress) vs resolve autonomously; confidence-based routing for human review.
+Use three passes: learn the task statements, apply them to scenarios, then retrieve the decisions from memory.
 
-Hands-on practice: see [exercises/](exercises/README.md).
+### First pass: learn the blueprint
+
+- Work through each domain's task statements in the order of its index.
+- For every statement, distinguish the **model-driven** approach from a **programmatic** safeguard.
+- Record trade-offs, not just preferred answers.
+- Build or configure one small example for each pattern before moving on.
+
+### Second pass: practise decisions
+
+- Attempt every scenario's questions with the answers hidden.
+- Explain why each distractor fails and link the answer to a domain task statement.
+- Complete the four exercises, starting from the [exercise index](exercises/README.md).
+- Practise the following scenarios:
+  - Agent loop and tool-calling reliability
+  - Claude Code team configuration
+  - Structured extraction and validation
+  - Multi-agent research and context handoff
+
+### Final pass: retrieval and review
+
+- Answer the "check yourself" questions without viewing the surrounding notes.
+- For missed questions, return to the relevant task statement and produce a one-sentence rule.
+- Review the exam traps in the domain task-statement pages only after practising the normal answer first.
+- Revisit every domain with weak check-yourself results before scheduling the exam.
+
+## Revision checklist
+
+- [ ] Can explain `stop_reason` and the agentic tool-use loop
+- [ ] Can choose between prompts, routing, and programmatic workflow enforcement
+- [ ] Can design overlapping MCP tools with clear boundaries
+- [ ] Can structure tool errors and handle retryable failures
+- [ ] Can explain CLAUDE.md scope, path-specific rules, and skills
+- [ ] Can choose plan mode versus direct execution
+- [ ] Can implement schema-constrained output and validation retries
+- [ ] Can preserve facts, provenance, and uncertainty across context
+- [ ] Can define escalation criteria and human-review thresholds
+- [ ] Have completed all four hands-on exercises
+- [ ] Have attempted all six scenarios and explained every distractor

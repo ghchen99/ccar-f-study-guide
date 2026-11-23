@@ -2,6 +2,16 @@
 
 **Weight:** 20%
 
+Start with configuration scope and precedence. Then add reusable skills or commands, path-specific rules, and a deliberate plan-versus-implementation workflow.
+
+## Revision sequence
+
+1. Model the CLAUDE.md hierarchy and avoid conflicting instructions.
+2. Choose custom commands or skills based on reuse and context needs.
+3. Scope rules to the files and directories they govern.
+4. Use plan mode for ambiguity or risk and direct execution for well-defined work.
+5. Apply iterative refinement and CI/CD feedback to a repeatable workflow.
+
 ## Task statements
 
 - [3.1 CLAUDE.md hierarchy, scoping, modular organization](3.1-claude-md-hierarchy.md)
