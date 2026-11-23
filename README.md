@@ -1,6 +1,6 @@
 # Claude Certified Architect – Foundations
 
-Hi, I'm an AI engineer. I put in about 10 hours over two weeks, used only these notes, and passed with 837 (the pass mark is 720). I've shared them in case they help you get there too.
+Hey, welcome to my unofficial study guide for the Claude Certified Architect – Foundations exam! I'm an AI engineer, and these notes are all I used to pass with 837 (the pass mark is 720), after about 10 hours of revision over two weeks. I hope they help you get there too.
 
 > [!IMPORTANT]
 > This course prioritises architectural judgement over SDK memorisation. Answer *why* a design works before asking *how* to write it.
